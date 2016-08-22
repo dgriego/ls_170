@@ -1,0 +1,18 @@
+<h1><%= @user_name %></h1>
+<ul>
+  <li>Email: <%= @email %></li>
+  <li> Interests:
+    <%= @interests.join(', ') %>
+  </li>
+</ul>
+
+<ul>
+  <% @users.keys.each do |name| %>
+    <% if name != @user_name %>
+      <li>
+        <a href="/<%= name %>"><%= name %></a>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+  

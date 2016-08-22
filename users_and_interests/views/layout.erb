@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Users and Interests</title>
+  </head>
+  <body>
+    <%= yield %>
+    <p>Users Count: <%= @users.keys.length %></p>
+    <p>Interests Count: <%= count_interests(@users) %></p>
+  </body>
+</html>
